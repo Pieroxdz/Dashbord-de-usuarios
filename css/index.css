@@ -1,0 +1,103 @@
+/* Reboto y Urbanist de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    /* Vuelve a 16px para el texto normal */
+    font-family:  "Urbanist", sans-serif;
+}
+
+main {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* FORMULARIO */
+#formContainer {
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgb(148, 148, 148);
+}
+
+#formContainer>h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 6.4rem;
+}
+
+#formContainer>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#formContainer>form>input {
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    border: 2px solid #c1b8b8;
+
+}
+
+#formContainer>form>button {
+    margin-top: 1rem;
+    padding: 8px;
+    border-radius: 5rem;
+    border: none;
+    background-color: rgb(6, 47, 68);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#formContainer>form>button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(33, 76, 76);
+}
+
+/* TABLE */
+#tableContainer {}
+
+table{
+    width: 100%;
+}
+
+table,
+td,
+th,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(177, 173, 173);
+    padding: 1rem 0.5rem;
+}
+
+td {
+    padding: 1rem 0.5rem;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
