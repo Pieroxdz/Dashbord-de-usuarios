@@ -66,7 +66,9 @@ main {
 }
 
 /* TABLE */
-#tableContainer {}
+#tableContainer i{
+    cursor: pointer;
+}
 
 table{
     width: 100%;

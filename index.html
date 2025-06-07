@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,7 +23,7 @@
                 <input id="user-email" type="email" placeholder="markinpiero005@gmail.com" />
                 <label for="user-password">Contraseña</label>
                 <input id="user-password" type="password" />
-                <button type="submit">GUARDAR</button>
+                <button id="btnAddUpdate" type="submit">GUARDAR</button>
             </form>
 
         </section>
@@ -37,17 +40,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td><i class="fas fa-trash"></i></td>
                         <td><i class="fas fa-pen"></i></td>
                         <td>Pieroxdz</td>
                         <td>markinpiero005@gmail.com</td>
                         <td>contraseña</td>
-
+                    </tr> -->
                 </tbody>
             </table>
         </section>
     </main>
+
+<script src="./js/model/Users.js"></script>
+<script src="./js/controller/user.js"></script>
+<script src="./js/index.js"></script>
 </body>
 
 </html>
